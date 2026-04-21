@@ -1,5 +1,7 @@
 # 🎓 个人主页 - 正经版
 
+> **🌐 在线访问**: https://nengyong-liang.github.io
+
 基于 [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) 模板构建的现代化个人主页。
 
 ## 🌟 特性
@@ -95,6 +97,36 @@ node scripts/fetch-github-data.js
 
 /* 添加你的自定义样式 */
 ```
+
+## ⚠️ 安全注意事项
+
+### 敏感信息保护
+
+**不要上传以下内容到 GitHub**：
+
+- ❌ `.env` 文件（包含 API keys）
+- ❌ `node_modules/`（依赖包）
+- ❌ `dist/`（构建产物）
+- ❌ `.astro/`（缓存文件）
+- ❌ 个人敏感信息（私钥、密码等）
+
+**已配置 `.gitignore`**：
+```gitignore
+dist/
+.astro/
+node_modules/
+.env
+.env.production
+.DS_Store
+```
+
+### GitHub Token 安全
+
+如果使用 GitHub Token 部署：
+1. 使用最小权限原则（只需 `repo` 和 `workflow`）
+2. 定期轮换 Token
+3. 不要将 Token 提交到代码库
+4. 使用 GitHub Secrets 管理生产环境 Token
 
 ## 📦 构建和部署
 
