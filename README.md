@@ -1,187 +1,174 @@
-<img width="1943" height="1093" alt="image" src="https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850" />
+# 🎓 个人主页 - 正经版
 
-# DevPortfolio Template
+基于 [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) 模板构建的现代化个人主页。
 
-A modern, minimalist portfolio template built with Astro and Tailwind CSS. Perfect for developers looking to showcase their skills, experience, and projects in a clean, professional way.
+## 🌟 特性
 
-This was completely rebuilt from the ground up from V1. This template was built to be entirely ready to go with a quick config edit (see below) but also provides the ability to easily extend in whatever way you want.
+- ⚡ **极速加载** - Astro 静态生成，<50KB JS
+- 📱 **完全响应式** - 适配所有设备
+- 🎨 **现代设计** - 简洁专业的 UI
+- 🔍 **SEO 优化** - 优秀的搜索引擎排名
+- 🌙 **暗黑模式** - 内置主题切换
+- 📊 **GitHub 同步** - 自动获取最新项目数据
 
-This template also comes with `CLAUDE.md` and `.cursor/rules` files for easy integration with your existing AI workflows.
+## 🚀 本地开发
 
-> **📬 Connect & Share!**  
-> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/rfitzio).  
-> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
-
-## Preview
-
-To view a live preview of the site, [click here](https://ryanfitzgerald.github.io/devportfolio/).
-
-## Built With
-
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
-
-## Updating the Template
-
-### Configuration
-
-The template is designed to be easily customizable through the `src/config.ts` file. This single file controls:
-
-- **Personal Information**: Name, title, description
-- **Accent Color**: Primary color theme (changing this will change the accent color site wide)
-- **Social Links**: Email, LinkedIn, Twitter, GitHub (all optional)
-- **About Section**: Personal bio/description
-- **Skills**: List of technical skills
-- **Projects**: Project showcase with descriptions and links
-- **Experience**: Work history with bullet points
-- **Education**: Educational background and achievements
-
-If skills, projects, experience, or education are removed from the config, those sections will be hidden entirely.
-
-### Example structures
-
-Here's what the config data structure looks like for each section:
-
-#### Basic Information
-```typescript
-name: "Your Name",
-title: "Your Job Title",
-description: "Brief site description",
-accentColor: "#1d4ed8", // Hex color for theme
-```
-
-#### Social Links (all optional)
-```typescript
-social: {
-  email: "your-email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
-  github: "https://github.com/yourusername",
-}
-```
-
-#### About Section
-```typescript
-aboutMe: "A paragraph describing yourself, your background, interests, and what you're passionate about. This appears in the About section of your portfolio."
-```
-
-#### Skills
-```typescript
-skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker"]
-```
-
-#### Projects
-```typescript
-projects: [
-  {
-    name: "Project Name",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
-```
-
-#### Experience
-```typescript
-experience: [
-  {
-    company: "Company Name",
-    title: "Your Job Title",
-    dateRange: "Jan 2022 - Present",
-    bullets: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Reduced API response times by 40% through optimization",
-      "Mentored team of 5 junior developers",
-    ],
-  }
-]
-```
-
-#### Education
-```typescript
-education: [
-  {
-    school: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    dateRange: "2014 - 2018",
-    achievements: [
-      "Graduated Magna Cum Laude with 3.8 GPA",
-      "Dean's List all semesters",
-      "President of Computer Science Club"
-    ]
-  }
-]
-```
-
-### Icons
-
-The template uses [Tabler Icons](https://tabler.io/icons) for all icons. If you wish to add more icons and have it look consistent with what's already there, you can browse through their extensive icon library.
-
-## Project Structure
-
-```
-devportfolio/
-├── public/
-│   └── favicon.svg          # Site favicon
-├── src/
-│   ├── components/          # Astro components
-│   │   ├── About.astro      # About section
-│   │   ├── Education.astro  # Education section
-│   │   ├── Experience.astro # Work experience section
-│   │   ├── Footer.astro     # Site footer
-│   │   ├── Header.astro     # Navigation header
-│   │   ├── Hero.astro       # Hero/intro section
-│   │   └── Projects.astro   # Projects showcase
-│   ├── pages/
-│   │   └── index.astro      # Main page layout
-│   ├── styles/
-│   │   └── global.css       # Global styles
-│   └── config.ts            # Site configuration
-├── astro.config.mjs         # Astro configuration
-├── package.json             # Project dependencies
-├── tailwind.config.js       # Tailwind configuration
-└── tsconfig.json            # TypeScript configuration
-```
-
-## Local Development
-
-If you'd like to run it locally:
-
-```
-git clone https://github.com/RyanFitzgerald/devportfolio.git
-cd devportfolio
+```bash
+# 安装依赖
 npm install
-```
 
-After that, start up the Astro dev server with:
-
-```
+# 启动开发服务器
 npm run dev
+
+# 构建生产版本
+npm run build
+
+# 预览生产构建
+npm run preview
 ```
 
-## Deployment
+## 📝 配置说明
 
-The template can be deployed to any static hosting service easily (and in most cases, completely free). Here are some options:
+### 1. 基本信息配置
 
-- To deploy with Netlify, [click here](https://docs.astro.build/en/guides/deploy/netlify/).
-- To deploy with Vercel, [click here](https://docs.astro.build/en/guides/deploy/vercel/).
-- To deploy with GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/).
-- To deploy with Cloudflare Pages, [click here](https://docs.astro.build/en/guides/deploy/cloudflare/).
-- To deploy with Render, [click here](https://docs.astro.build/en/guides/deploy/render/).
+编辑 `src/config.ts`:
 
-Want to deploy somewhere else? Find more guides [here](https://docs.astro.build/en/guides/deploy/).
+```typescript
+export const siteConfig = {
+  name: "nengyong liang",           // 你的姓名
+  title: "Developer & Engineer",    // 职位/头衔
+  description: "I'm Ultraman Tiga", // 个人简介
+  accentColor: "#1d4ed8",          // 主题色
+  
+  social: {
+    email: "your-email@example.com",
+    linkedin: "https://linkedin.com/in/yourprofile",
+    twitter: "https://twitter.com/yourhandle",
+    github: "https://github.com/nengyong-liang",
+    blog: "https://yourblog.com",
+  },
+  
+  aboutMe: `你的详细个人简介...`,
+  
+  skills: [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    // 添加更多技能
+  ],
+  
+  projects: [
+    // 项目列表（可从 GitHub 自动获取）
+  ],
+  
+  experience: [
+    // 工作经历
+  ],
+  
+  education: [
+    // 教育背景
+  ],
+};
+```
 
-## Changelog
+### 2. 更新 GitHub 数据
 
-To view the changelog, see CHANGELOG.md.
+```bash
+# 从项目根目录运行
+node scripts/fetch-github-data.js
+```
 
-## License
+这将自动更新：
+- 个人 Profile 信息
+- GitHub 仓库列表
+- 项目描述和技术栈
 
-This project is fully and completely MIT. See LICENSE.md.
+## 🎨 自定义样式
 
-## Questions?
+编辑 `src/styles/global.css`:
 
-Feel free to reach out on [X (Twitter)](https://x.com/rfitzio) if you have any questions or need help.
+```css
+/* 自定义全局样式 */
+:root {
+  --accent-color: #1d4ed8;
+}
+
+/* 添加你的自定义样式 */
+```
+
+## 📦 构建和部署
+
+### 构建
+
+```bash
+npm run build
+```
+
+输出目录：`dist/`
+
+### 部署到 GitHub Pages
+
+项目已配置 GitHub Actions，推送到 `main` 分支后自动部署。
+
+**手动部署**:
+
+```bash
+# 安装 gh-pages
+npm install -D gh-pages
+
+# 部署
+npx gh-pages -d dist
+```
+
+## 📁 项目结构
+
+```
+portfolio-official/
+├── src/
+│   ├── components/          # Astro 组件
+│   │   ├── Header.astro    # 页眉
+│   │   ├── Hero.astro      # 英雄区
+│   │   ├── About.astro     # 关于我
+│   │   ├── Projects.astro  # 项目展示
+│   │   ├── Experience.astro # 工作经历
+│   │   ├── Education.astro # 教育背景
+│   │   └── Footer.astro    # 页脚
+│   ├── pages/
+│   │   └── index.astro     # 主页
+│   ├── styles/
+│   │   └── global.css      # 全局样式
+│   └── config.ts           # 配置文件
+├── public/
+│   └── favicon.svg         # 网站图标
+├── astro.config.mjs        # Astro 配置
+├── package.json
+└── README.md
+```
+
+## 🔧 技术栈
+
+- **框架**: Astro 5.x
+- **样式**: Tailwind CSS 4.x
+- **构建工具**: Vite
+- **语言**: TypeScript
+
+## 📊 性能指标
+
+目标 Lighthouse 评分：
+
+- Performance: 95+
+- Accessibility: 95+
+- Best Practices: 95+
+- SEO: 95+
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+基于 [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) (MIT License)
+
+---
+
+**Made with ❤️ by nengyong-liang**

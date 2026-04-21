@@ -1,91 +1,87 @@
+// 此文件由 scripts/fetch-github-data.js 自动生成
+// 最后更新时间：2026/4/21 20:06:31
+// 如需手动修改，请编辑此文件
+
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "nengyong liang",
+  title: "Developer & Engineer",
+  description: "I'm Ultraman Tiga",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "", // 请手动填写
+    linkedin: "", // 请手动填写
+    twitter: "",
+    github: "https://github.com/nengyong-liang",
+    blog: "https://www.ahu.edu.cn/",
   },
-  aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  aboutMe: `I'm Ultraman Tiga`,
+  skills: [
+    // 请根据你的实际技能手动调整
+    "JavaScript",
+    "TypeScript", 
+    "Python",
+    "Git",
+    // 添加更多技能...
+  ],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "EVAC-MIND",
+      description: "暂无描述",
+      link: "https://github.com/nengyong-liang/EVAC-MIND",
+      skills: ["Python"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "MultiMod-VisionDet",
+      description: "暂无描述",
+      link: "https://github.com/nengyong-liang/MultiMod-VisionDet",
+      skills: ["Python"],
     },
     {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "MemoryHole",
+      description: "暂无描述",
+      link: "https://github.com/nengyong-liang/MemoryHole",
+      skills: ["HTML"],
     },
+    {
+      name: "NLP-course",
+      description: "暂无描述",
+      link: "https://github.com/nengyong-liang/NLP-course",
+      skills: ["Python"],
+    },
+    {
+      name: "clip-reid-lny",
+      description: "暂无描述",
+      link: "https://github.com/nengyong-liang/clip-reid-lny",
+      skills: ["Python"],
+    },
+    {
+      name: "Data-Mining-Practice",
+      description: "暂无描述",
+      link: "https://github.com/nengyong-liang/Data-Mining-Practice",
+      skills: ["Python"],
+    }
   ],
   experience: [
+    // 请手动填写工作经历
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "公司名称",
+      title: "职位",
+      dateRange: "开始日期 - 结束日期",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "工作内容 1",
+        "工作内容 2",
       ],
     },
   ],
   education: [
+    // 请手动填写教育背景
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
+      school: "anhui university",
+      degree: "学位",
+      dateRange: "入学年份 - 毕业年份",
       achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+        "成就 1",
+        "成就 2",
       ],
     },
   ],
